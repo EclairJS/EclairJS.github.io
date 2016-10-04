@@ -30,27 +30,29 @@
           <h3>
 <a id="welcome-to-eclairjs" class="anchor" href="#welcome-to-eclairjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to EclairJS</h3>
 
-<p>Web applications are looking to incorporate increasingly sophisticated analytics and more types of data. The <a href="http://spark.apache.org">Apache Spark</a> engine is a fast and general purpose engine for analytics and large-scale data processing which web application runtimes like <a href="http://nodejs.org">Node.js</a> can take advantage of using EclairJS. EclairJS is actually made up of two separate projects -- EclairJS-Node and EclairJS-Nashorn -- that enable web applications and Jupyter Notebooks to work with Spark. </p>
+<p>Web applications are looking to incorporate increasingly sophisticated analytics and more types of data. The <a href="http://spark.apache.org">Apache Spark</a> engine is a fast and general purpose engine for analytics and large-scale data processing which web application runtimes like <a href="http://nodejs.org">Node.js</a> can take advantage of using EclairJS.</p>
 
-<p><img src="images/stack-1.jpg"  width="483" height="522" alt="Technology Stack"></p>
+<p><img src="images/stack-2.jpg"  width="483" height="522" alt="Technology Stack"></p>
 
 <h3>
-<a id="node-nashorn" class="anchor" href="#node-nashorn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/EclairJS/eclairjs-node">EclairJS-Node</a> &amp; <a href="https://github.com/EclairJS/eclairjs-nashorn">EclairJS-Nashorn</a>
+<a id="client-server" class="anchor" href="#client-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EclairJS Client &amp; Server
 </h3>
 
-<p>EclairJS-Node enables Node.js and JavaScript developers to program against Apache Spark. It provides an Spark API in Node.js and JavaScript, and a remote client for Node.js applications. EclairJS-Node depends on the EclairJS-Nashorn component.</p>
+<p><a href="https://github.com/EclairJS/eclairjs">EclairJS</a> has a client component and a server component. The EclairJS Client enables Node.js and JavaScript developers to program against Apache Spark. It provides a Spark API in Node.js and JavaScript, and enables Node.js applications to run remotely from Spark.</p>
 
-<p>EclairJS-Nashorn exposes the Apache Spark programming model to JavaScript. It provides support for JavaScript in Spark and a framework supporting EclairJS-Node, Jupyter Notebooks, and a REPL.</p>
+<p>The EclairJS server is responsible for exposing the Apache Spark programming model to JavaScript and for taking advantage of Spark's distributed computing capabilities. In addition to supporting the EclairJS client, the Server component supports Jupyter Notebooks, and a REPL.</p>
 
 <h3>
 <a id="community" class="anchor" href="#community" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Community etc.
 </h3>
 
-<p>Both EclairJS projects share a <a href="http://eclairjs.slack.com">Slack chat channel</a> and a <a href="https://groups.google.com/d/forum/eclairjs">group list</a>. If you are interested in joining these, or in any other aspects of the projects, email us at <a href="mailto:info@eclairjs.org">info@eclairjs.org</a>.</p>
+<p>The EclairJS project has a <a href="http://eclairjs.slack.com">Slack chat channel</a> and a <a href="https://groups.google.com/d/forum/eclairjs">group list</a>. If you are interested in joining these, or in any other aspects of the projects, email us at <a href="mailto:info@eclairjs.org">info@eclairjs.org</a>.</p>
 
-<p>The two projects maintain separate issue lists for tracking bugs and monitoring the progress of requested features, see the lists for <a href="https://github.com/EclairJS/eclairjs-node/issues">EclairJS-Node</a> and <a href="https://github.com/EclairJS/eclairjs-nashorn/issues">EclairJS-Nashorn</a>.</p>
+<p>The project maintains an <a href="https://github.com/EclairJS/eclairjs/issues">issue list</a> for tracking bugs and monitoring the progress of requested features.</p>
 
-<p>Want to find out more? Visit the individual projects or check out some of our recent presentations:</p>
+<p>Note that the EclairJS project used to be represented through two separate projects: EclairJS-Node and EclairJS-Nashorn. The EclairJS project has absorbed these former projects as <a href="https://github.com/EclairJS/eclairjs/tree/master/client">EclairJS Client</a> and <a href="https://github.com/EclairJS/eclairjs/tree/master/server">EclairJS Server</a> respectively. Going forward and with EclairJS's support for Apache Spark version 2.0, all work will now take place under EclairJS although the older repositories will remain for a while: <a href="https://github.com/EclairJS/eclairjs-node">EclairJS-Node</a>, <a href="https://github.com/EclairJS/eclairjs-nashorn">EclairJS-Nashorn</a>.</p>
+
+<p>Want to find out more? Visit the <a href="https://github.com/EclairJS/eclairjs">EclairJS project on GitHub</a> where you will find examples and more documentation or check out some of our recent presentations:</p>
 <ul>
   <li><a href="https://developer.ibm.com/node/2016/08/25/running-apache-spark-applications-with-node-js-on-ibm-bluemix/">Running Apache Spark Applications With Node.js on IBM Bluemix</a></li>
   <li><a href="https://spark-summit.org/2016/events/eclairjs-nodejs-apache-spark/">Spark Summit presentation, 06-07-16</a></li>
